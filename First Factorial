@@ -13,14 +13,12 @@
 // Input: 8
 // Output: 40320
 
-const firstFactorial = num => {
-  let factorial = 1;
-
-  for (let i = 1; i <= num; i++) {
-    factorial = factorial * i;
+function factorial(num) {
+  if (num === 0 || num === 1) {
+    return 1;
+  } else {
+    return num * factorial(num - 1);
   }
+}
 
-  return factorial;
-};
-
-console.log(firstFactorial(4));
+console.log(factorial(5)); // Output: 120
