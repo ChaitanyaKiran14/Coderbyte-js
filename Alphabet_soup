@@ -12,11 +12,18 @@
 // Input: "hooplah"
 // Output: ahhloop
 
-const alphabetSoup = str => {
-  return str
-    .split('')
-    .sort()
-    .join('');
+
+const alphaSoup = (str) => {
+  const validCharacters = [];
+  for (let char of str) {
+    if (isAlphabet(char) || isDigit(char)) {
+      validCharacters.push(char);
+    }
+  }
+  return validCharacters.sort().join('')
 };
 
-console.log(alphabetSoup('programming'));
+const isAlphabet = (char) => /[a-zA-Z]/.test(char);
+const isDigit = (char) => !isNaN(parseInt(char));
+
+console.log(alphaSoup("random__ok")); // Output:adkmnoor
