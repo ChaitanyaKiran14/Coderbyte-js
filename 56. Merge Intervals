@@ -1,3 +1,6 @@
+#first sort them based on the first value of the interval, after that declare the mergedlist with initial value of interval[0] after that we run loop from the
+second value from intervals, and we check if the first_value of interval to end_value of the recently added value from the mergedList
+
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         intervals.sort()
