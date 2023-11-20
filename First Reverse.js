@@ -14,3 +14,12 @@ const firstReverse = str => {
 };
 
 console.log(firstReverse('I Love Code'));
+
+
+Reverse array of strings:
+
+const stringArray = ["apple", "banana", "cherry", "date"];
+
+const reversedArray = stringArray.map(str => str.split('').reverse().join(''));
+
+console.log(reversedArray);
