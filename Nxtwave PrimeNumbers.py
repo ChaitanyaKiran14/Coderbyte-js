@@ -1,3 +1,4 @@
+#Checking if a number is a prime number or not...
 n= 3
 factors = 0
 for i in range(2, n):
