@@ -1,3 +1,4 @@
+//WE USED SIMILAR LOGIC IN duplicates.js
 let charCount = (str) => {
     let counts = {};
     let newStr = str.split(' ').join('');
