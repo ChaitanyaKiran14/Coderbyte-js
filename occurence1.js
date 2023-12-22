@@ -1,4 +1,4 @@
-//WE USED SIMILAR LOGIC IN duplicates.js
+WE USED SIMILAR LOGIC IN duplicates.js
 let charCount = (str) => {
     let counts = {};
     let newStr = str.split(' ').join('');
@@ -25,3 +25,43 @@ w:1
 r:1
 d:1
 }
+-----------------------------------------------------------------------------------------------------
+If an array of strings is given, you just join the array into single string and so the same  and also remove white spaces 
+
+let charCount = (arr) => {
+    let counts = {};
+    
+    let newStr =  arr.join('').split(' ').join('');
+    
+    for (let i = 0; i< newStr.length; i++){
+        let char= newStr[i]
+        counts[char] = (counts[char] ||0) +1
+    }
+    return counts
+}
+
+let myString = ["hello world", "chaitanya", "kiran"]
+let charOccurrences = charCount(myString);
+console.log(charOccurrences);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
