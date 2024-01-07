@@ -43,6 +43,7 @@ let charCount = (arr) => {
 let myString = ["hello world", "chaitanya", "kiran"]
 let charOccurrences = charCount(myString);
 console.log(charOccurrences);
+console.log("Count of 'a':", val['a'] || 0);  //if I want to print how many times a specific letter is repeated. I couldn't do that in interview so at least now i know.
 
 
 
